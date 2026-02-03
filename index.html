@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de tu SuperMercado  - En en Isla</title>
+    <!-- Meta tags mejorados para SEO -->
+    <meta name="description" content="Supermercado SUN MARKET - Productos frescos al detal y al mayor. Combos promocionales y productos individuales. Entrega rápida en toda la isla.">
+    <meta name="keywords" content="supermercado, mayoreo, detal, productos frescos, despensa, combos, ofertas">
+    <meta property="og:title" content="SUN MARKET - Tu Supermercado Digital">
+    <meta property="og:description" content="Compra al detal o al mayor con los mejores precios">
+    
+    <!-- Preconnect para mejor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <!-- Header con navegación MEJORADA -->
+<header id="main-header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>SUPER<span>MARKET</span></h1>
+                <p class="tagline">Productos Frescos • Detal y Mayor • Entrega Rápida</p>
+            </div>
+            
+            <!-- Controles móviles -->
+            <div class="nav-controls">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Navegación principal con acciones -->
+            <div class="nav-container">
+               <!-- Versión con íconos opcional -->
+<ul class="nav-menu" id="nav-menu">
+    <li>
+        <a href="#hero" class="nav-link active">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </a>
+    </li>
+    <li>
+        <a href="#products-individual" class="nav-link">
+            <i class="fas fa-shopping-basket"></i>
+            <span>Productos Individuales</span>
+        </a>
+    </li>
+    <li>
+        <a href="#products-combos" class="nav-link">
+            <i class="fas fa-boxes"></i>
+            <span>Combos</span>
+        </a>
+    </li>
+    <li>
+        <a href="#bulk-products" class="nav-link">
+            <i class="fas fa-chart-line"></i>
+            <span>Venta al Mayor</span>
+        </a>
+    </li>
+    <li>
+        <a href="#how-to-order" class="nav-link">
+            <i class="fas fa-question-circle"></i>
+            <span>Cómo Ordenar</span>
+        </a>
+    </li>
+    
+    <!-- Acciones integradas en el menú -->
+    <li class="nav-actions">
+        <button class="nav-action-btn cart-btn" id="nav-cart-toggle" aria-label="Carrito">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-badge" id="nav-cart-count">0</span>
+            <span class="action-text">Carrito</span>
+        </button>
+        
+        <a href="https://wa.me/1234567890?text=Hola%20SUN%20MARKET,%20me%20gustaría%20hacer%20un%20pedido" 
+           class="nav-action-btn whatsapp-btn" 
+           target="_blank" 
+           id="nav-whatsapp-quick">
+            <i class="fab fa-whatsapp"></i>
+            <span class="action-text">Pedir por WhatsApp</span>
+        </a>
+    </li>
+</ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Overlay para menú móvil -->
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<!-- Overlay para carrito -->
+<div class="cart-overlay" id="cart-overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Tu Supermercado Digital<br><span class="highlight">al Detal y al Mayor</span></h2>
+                    <p class="hero-subtitle">Productos frescos, precios competitivos y entrega en toda la isla. ¡Compra individual o en cantidad!</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#products-individual" class="btn btn-primary">
+                            <i class="fas fa-shopping-basket"></i> Ver Productos Individuales
+                        </a>
+                        <a href="#bulk-products" class="btn btn-secondary">
+                            <i class="fas fa-boxes"></i> Ver Precios al Mayor
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Productos Disponibles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30-60</div>
+                        <div class="stat-label">Minutos de Entrega</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Pedidos por WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros de Productos -->
+    <section class="filters-section" id="filters">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="category-filter" class="filter-label">
+                        <i class="fas fa-filter"></i> Categoría
+                    </label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">Todas las Categorías</option>
+                        <option value="despensa">Despensa</option>
+                        <option value="frescos">Productos Frescos</option>
+                        <option value="lacteos">Lácteos</option>
+                        <option value="bebidas">Bebidas</option>
+                        <option value="limpieza">Limpieza</option>
+                        <option value="carnes">Carnes y Pollo</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter" class="filter-label">
+                        <i class="fas fa-tag"></i> Precio
+                    </label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="all">Todos los Precios</option>
+                        <option value="0-5">$0 - $5</option>
+                        <option value="5-10">$5 - $10</option>
+                        <option value="10-20">$10 - $20</option>
+                        <option value="20+">$20+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="type-filter" class="filter-label">
+                        <i class="fas fa-box"></i> Tipo
+                    </label>
+                    <select id="type-filter" class="filter-select">
+                        <option value="all">Todos</option>
+                        <option value="individual">Individual</option>
+                        <option value="combo">Combo</option>
+                        <option value="bulk">Mayoreo</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-filter" id="apply-filters">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+                
+                <button class="btn btn-outline" id="reset-filters">
+                    <i class="fas fa-redo"></i> Reiniciar
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Individuales -->
+    <section class="products-section" id="products-individual">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos <span class="highlight">Individuales</span></h2>
+                <p class="section-subtitle">Compra por unidad al mejor precio. Frescura garantizada.</p>
+                <div class="section-actions">
+                    <button class="btn-view-mode active" data-view="grid" title="Vista en cuadrícula">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="btn-view-mode" data-view="list" title="Vista en lista">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="individual-products-container" data-view="grid">
+                <!-- Los productos se cargan dinámicamente -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-load-more" id="load-more-individual">
+                    <i class="fas fa-plus"></i> Cargar más productos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combos Promocionales -->
+    <section class="products-section bg-light" id="products-combos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Combos <span class="highlight">Promocionales</span></h2>
+                <p class="section-subtitle">Ahorra comprando paquetes especiales. ¡Hasta 30% de descuento!</p>
+            </div>
+            
+            <div class="combos-container" id="combos-container">
+                <!-- Los combos se cargan dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Venta al Mayor -->
+    <section class="bulk-section" id="bulk-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Venta <span class="highlight">al Mayor</span></h2>
+                <p class="section-subtitle">Precios especiales para compras en cantidad. Ideal para negocios.</p>
+            </div>
+            
+            <div class="bulk-info">
+                <div class="bulk-card">
+                    <div class="bulk-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Descuentos por Volumen</h3>
+                    <p>Mientras más compres, mayor será tu descuento. Precios especiales para restaurantes y negocios.</p>
+                </div>
+                
+                <div class="bulk-card">
+                    <div class="bulk-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega Programada</h3>
+                    <p>Establece entregas periódicas para tu negocio. Nunca te quedes sin inventario.</p>
+                </div>
+                
+                <div class="bulk-card">
+                    <div class="bulk-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Facturación</h3>
+                    <p>Facturas electrónicas para todas tus compras al mayor. Cumple con tus requisitos contables.</p>
+                </div>
+            </div>
+            
+            <div class="bulk-table-container">
+                <table class="bulk-table" id="bulk-pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>6-10 unidades</th>
+                            <th>11-25 unidades</th>
+                            <th>25+ unidades</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los precios al mayor se cargan dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="bulk-contact">
+                <div class="contact-card">
+                    <h3><i class="fas fa-headset"></i> ¿Necesitas un presupuesto personalizado?</h3>
+                    <p>Contacta a nuestro equipo de ventas al mayor para precios especiales y condiciones personalizadas.</p>
+                    <button class="btn btn-whatsapp" id="contact-bulk">
+                        <i class="fab fa-whatsapp"></i> Contactar Ventas al Mayor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo Ordenar -->
+    <section class="how-to-order" id="how-to-order">
+        <div class="container">
+            <h2 class="section-title">¿Cómo <span class="highlight">Ordenar?</span></h2>
+            
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Busca Productos</h3>
+                    <p>Navega por nuestras categorías o usa el buscador para encontrar lo que necesitas.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                    <h3>Agrega al Carrito</h3>
+                    <p>Selecciona cantidad y tipo (detal o mayor). Agrega productos individuales o combos.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Envía por WhatsApp</h3>
+                    <p>Revisa tu carrito y envía el pedido automáticamente por WhatsApp.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Recibe en tu Puerta</h3>
+                    <p>Recibe tus productos frescos en 30-60 minutos. Paga al recibir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Tu Carrito</h3>
+            <button class="cart-close" id="cart-close">&times;</button>
+        </div>
+        
+        <div class="cart-body">
+            <div class="cart-empty" id="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="#products-individual" class="btn btn-outline">Ver Productos</a>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <!-- Los items del carrito se cargan dinámicamente -->
+            </div>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío:</span>
+                    <span id="cart-shipping">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary btn-block" id="checkout-btn" disabled>
+                <i class="fab fa-whatsapp"></i> Enviar Pedido por WhatsApp
+            </button>
+            
+            <div class="cart-note">
+                <small><i class="fas fa-info-circle"></i> El pedido se enviará automáticamente por WhatsApp</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Producto -->
+    <div class="product-modal" id="product-modal">
+        <div class="modal-content">
+            <!-- Contenido cargado dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- ... (mismo footer que antes) ... -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot-container">
+        <!-- ... (mismo chatbot que antes) ... -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/chatbot.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar año actual
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Inicializar módulos
+            if (typeof initMain === 'function') initMain();
+            if (typeof initProducts === 'function') initProducts();
+            if (typeof initOrders === 'function') initOrders();
+            if (typeof initChatbot === 'function') initChatbot();
+        });
+    </script>
+</body>
+</html>

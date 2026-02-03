@@ -1,0 +1,32 @@
+
+ Estructura Final de Archivos
+
+sunmarket-catalogo/
+├── index.html
+├── css/
+│   ├── style.css          # Estilos base
+│   ├── products.css       # Estilos específicos de productos
+│   ├── chatbot.css        # Estilos del chatbot
+│   └── responsive.css     # Media queries
+├── js/
+│   ├── main.js           # Lógica principal
+│   ├── products.js       # Gestión de productos y carrito
+│   ├── orders.js         # Procesamiento de pedidos
+│   ├── chatbot.js        # Lógica del chatbot
+│   └── utils.js          # Utilidades
+├── data/
+│   └── products.json     # Base de datos de productos
+├── assets/
+│   └── images/
+│       ├── hero-bg.jpg
+│       └── products/
+│           ├── individual/
+│           │   ├── harina-pan.jpg
+│           │   ├── queso-mano.jpg
+│           │   └── ...
+│           └── combos/
+│               ├── combo-desayuno.jpg
+│               └── ...
+├── README.md
+├── package.json
+└── .gitignore

@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "id": "despensa",
+      "name": "Despensa",
+      "description": "Productos básicos para tu cocina",
+      "icon": "fas fa-shopping-basket"
+    },
+    {
+      "id": "frescos",
+      "name": "Productos Frescos",
+      "description": "Frutas, verduras y productos perecederos",
+      "icon": "fas fa-leaf"
+    },
+    {
+      "id": "lacteos",
+      "name": "Lácteos",
+      "description": "Leche, queso, yogurt y derivados",
+      "icon": "fas fa-cheese"
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "description": "Refrescos, jugos, agua y más",
+      "icon": "fas fa-wine-bottle"
+    },
+    {
+      "id": "limpieza",
+      "name": "Limpieza",
+      "description": "Productos de limpieza e higiene",
+      "icon": "fas fa-broom"
+    },
+    {
+      "id": "carnes",
+      "name": "Carnes y Pollo",
+      "description": "Carnes frescas y productos cárnicos",
+      "icon": "fas fa-drumstick-bite"
+    }
+  ],
+  
+  "bulkTiers": [
+    {
+      "id": "tier1",
+      "name": "Pequeño Mayorista",
+      "min": 6,
+      "max": 10,
+      "description": "Ideal para pequeños negocios"
+    },
+    {
+      "id": "tier2",
+      "name": "Mediano Mayorista",
+      "min": 11,
+      "max": 25,
+      "description": "Para restaurantes y tiendas medianas"
+    },
+    {
+      "id": "tier3",
+      "name": "Gran Mayorista",
+      "min": 26,
+      "description": "Precios especiales para grandes volúmenes"
+    }
+  ]
+}

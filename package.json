@@ -1,0 +1,29 @@
+{
+  "name": "sunmarket-catalogo",
+  "version": "1.0.0",
+  "description": "Catálogo digital para SUN MARKET - Tu Bodogón en Isla",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=localhost",
+    "build": "echo 'Build process would run here'",
+    "test": "echo 'No tests specified'",
+    "deploy": "echo 'Deployment script would run here'"
+  },
+  "keywords": [
+    "supermarket",
+    "ecommerce",
+    "whatsapp-commerce",
+    "catalog",
+    "chatbot"
+  ],
+  "author": "SUN MARKET Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/sunmarket-catalogo.git"
+  },
+  "homepage": "https://sunmarket.com"
+}
